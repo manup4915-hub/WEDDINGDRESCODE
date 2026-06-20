@@ -19,8 +19,8 @@ export default function Home() {
     <main>
       <Hero />
 
-      <section className="px-5 py-14 sm:px-8 lg:px-12">
-        <div className="mx-auto grid max-w-7xl gap-5 md:grid-cols-4">
+      <section className="px-4 py-14 sm:px-8 lg:px-12">
+        <div className="mx-auto grid max-w-7xl gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
             ["Theme", "High Tea Elegance"],
             ["Dress Code", "Formal / Garden Chic"],
@@ -29,17 +29,17 @@ export default function Home() {
           ].map(([label, value]) => (
             <div key={label} className="luxury-border rounded-[8px] bg-ivory/78 p-6 shadow-card backdrop-blur">
               <p className="text-xs font-semibold uppercase tracking-[0.22em] text-espresso/65">{label}</p>
-              <p className="mt-3 font-display text-3xl font-semibold leading-tight text-ink">{value}</p>
+              <p className="mt-3 font-display text-[1.75rem] font-semibold leading-tight text-ink">{value}</p>
             </div>
           ))}
         </div>
       </section>
 
-      <section className="px-5 py-16 sm:px-8 lg:px-12">
+      <section className="px-4 py-16 sm:px-8 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <div>
             <Badge>The Assignment</Badge>
-            <h2 className="mt-5 font-display text-5xl font-semibold leading-none text-ink sm:text-6xl">
+            <h2 className="mt-5 font-display text-[clamp(2.9rem,12vw,3.75rem)] font-semibold leading-none text-ink">
               Romantic, polished, and ready for tea.
             </h2>
           </div>
@@ -51,7 +51,7 @@ export default function Home() {
 
       <Gallery images={galleryImages} />
 
-      <section className="px-5 py-20 sm:px-8 lg:px-12">
+      <section className="px-4 py-16 sm:px-8 sm:py-20 lg:px-12">
         <div className="mx-auto grid max-w-7xl gap-6 lg:grid-cols-2">
           <GuideCard
             eyebrow="Outfit Guide"
@@ -74,11 +74,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-20 sm:px-8 lg:px-12">
+      <section className="px-4 py-16 sm:px-8 sm:py-20 lg:px-12">
         <div className="mx-auto max-w-7xl">
           <div className="max-w-3xl">
             <p className="text-xs font-semibold uppercase tracking-[0.28em] text-espresso/70">Color Palette</p>
-            <h2 className="mt-3 font-display text-5xl font-semibold leading-none text-ink sm:text-6xl">
+            <h2 className="mt-3 font-display text-[clamp(2.9rem,12vw,3.75rem)] font-semibold leading-none text-ink">
               Pastel, ivory, and champagne-gold.
             </h2>
           </div>
@@ -93,12 +93,12 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="px-5 py-20 sm:px-8 lg:px-12">
+      <section className="px-4 py-16 sm:px-8 sm:py-20 lg:px-12">
         <div className="mx-auto max-w-7xl rounded-[8px] bg-ink p-7 text-ivory shadow-romantic md:p-10">
           <div className="grid gap-8 lg:grid-cols-[0.85fr_1.15fr] lg:items-start">
             <div>
               <p className="text-xs font-semibold uppercase tracking-[0.28em] text-champagne">What to Avoid</p>
-              <h2 className="mt-3 font-display text-5xl font-semibold leading-none sm:text-6xl">Keep it elevated.</h2>
+              <h2 className="mt-3 font-display text-[clamp(2.9rem,12vw,3.75rem)] font-semibold leading-none">Keep it elevated.</h2>
             </div>
             <div className="grid gap-4 sm:grid-cols-2">
               {[
